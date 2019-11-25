@@ -16,34 +16,21 @@ Een project van 4 lesweken (Regio Rotterdam)
 
 # Eisen
 
-* 
+* Algemene samenvatting van het huis, huidige bod, start of nieuwe tijdslimiet.
+* Omschrijving van het huis.
+* Intergratie van Google maps.
+* Style moet zakkelijk en klassiek zijn
+* Functie krijgen waarbij de een gebruiker een email krijgt wanneer zijn/haar bod niet de hoogste meer is.
 
-# Huistijl Website
+# Huistijl Website (Moet verder gevraagd worden)
 
-* Tekstkleur: #000000
-* Actiekleur: #8FE507
+* Tekstkleur:
+* Actiekleur:
 
 * Headings: 
-  Caecilia LT Std
-  85 heavy
-  Korps: 42 pt
-  interlinie: 51 pt
-  Kleur: #343937
-  Kapitalen
 
 * Sub-Headings
-  Caecilia LT Std
-  85 heavy
-  Korps 18pt
-  Kleur: #343937
 
 * Paragraaf tekst:
-  Verdana
-  Korps: 12pt
-  Kleur: #343937
-  Linkslijnend
-  tekst: Verdana
-  korps: 12pt
   
  * Achtergrond-kleur:
-   #8FE507
