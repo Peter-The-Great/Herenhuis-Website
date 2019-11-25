@@ -17,13 +17,17 @@ Een project van 4 lesweken (Regio Rotterdam)
 # Eisen
 
 * Algemene samenvatting van het huis, huidige bod, start of nieuwe tijdslimiet.
+* Een virtuele toer met verschillende foto's van het huis en knopjes die naar rechts, links, boven en beneden gaan.
 * Omschrijving van het huis.
-* Intergratie van Google maps.
+* Intergratie van Google maps voor de kaart naar het huis.
 * Style moet zakkelijk en klassiek zijn
 * Functie krijgen waarbij de een gebruiker een email krijgt wanneer zijn/haar bod niet de hoogste meer is.
-
-# Huistijl Website (Moet verder gevraagd worden)
-
+* Link voor om naar het scherm te gaan waar ze verder kunnen biedden maken bij de mail
+* Bij aanbieders moeten we hun naam, bod, email, telefoonnummer, en iban-nummer nodig hebben zodat we die in de php server kunnen         gebruiken
+* Contact gegevens van de verkoper zelf. (vindt Pjotr)
+* Een demo over 4 weken.
+# Huistijl Website (Moet nog verder om gevraagd worden)
+* (bepaalde kleuren moeten nog gevraagd worden)
 * Tekstkleur:
 * Actiekleur:
 
