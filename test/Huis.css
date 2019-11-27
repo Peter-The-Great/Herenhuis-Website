@@ -4,7 +4,7 @@ body{
 }
 .header-object{
     margin-top: 50px;
-    text-align: center;
+    text-align: left;
     display: block;
 }
 .adress-stad-postcode{
@@ -17,7 +17,7 @@ body{
     line-height: 28px;
 }
 .nav {
-    background-color: #f7a100;
+    background-color: #8b288f;
     height: 75px;
 }
 ul{
@@ -45,4 +45,7 @@ li{
 }
 #pad {
     padding-right: 25px;
+}
+.header-object .row {
+    margin-top: 15px;
 }
