@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24c24daece.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Huis.css">
     <title>Herenhuis</title>
 </head>
+
 <body>
-<header class="header-object">
-    <div class="header-object_content"></div>
-    <div class="header-object__details">
-    <div class="header-object__details-info">
-        <h1 class="header-object__adres" id="adress">Lange Voorhout 67</h1><span class="adress-stad-postcode">2354 DK Den Haag</span>
-</header>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <nav>
+        <div class="nav">
+            <div class="container">
+                <ul>
+                    <li id="pad"><a><i class="fas fa-home"></i> Home</a></li>
+                    <li><a><i class="far fa-user-circle"></i> Account</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="breadcrums">
+            <div class="container">
+                <p><a href="">Home</a> > <a href="">Den Haag</a> > Lange Voorhout 67</p>
+            </div>
+        </div>
+    </nav>
+    <header class="header-object">
+        <div class="container">
+            <div class="header-object_details">
+                <h1 class="header-object__adres" id="adress">Lange Voorhout 67</h1><span
+                    class="adress-stad-postcode">2354
+                    DK Den Haag</span>
+                <div class="header-Pricing-House">€ 255.000 k.k.</div>
+            </div>
+            <div class="row">
+                <a href="..\Huis foto's\01.jpg" data-toggle="lightbox" data-gallery="gallery"
+                    class="col-md-4">
+                    <img src="..\Huis foto's\01.jpg" class="img-fluid rounded">
+                </a>
+                <a href="..\Huis foto's\03.jpg" data-toggle="lightbox" data-gallery="gallery"
+                    class="col-md-4">
+                    <img src="..\Huis foto's\03.jpg" class="img-fluid rounded">
+                </a>
+                <a href="..\Huis foto's\05.jpg" data-toggle="lightbox" data-gallery="gallery"
+                    class="col-md-4">
+                    <img src="..\Huis foto's\05.jpg" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery"
+                    class="col-md-4">
+                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
+                </a>
+                <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery"
+                    class="col-md-4">
+                    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
+                </a>
+                <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery"
+                    class="col-md-4">
+                    <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
+<!-- Credits to Lars for helping me with a little bit of frontend-->
