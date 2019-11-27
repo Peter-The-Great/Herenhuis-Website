@@ -3,10 +3,51 @@ body{
     color: #333;
 }
 .header-object{
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: left;
     display: block;
 }
+#pad{
+    padding-right: 25px;
+}
+#pad a, a:visited, a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+/* Pjotr Edit dit alleen */
+.section-object1{
+  margin-left: 100px;
+  margin-right: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  align-items: center;
+}
+#Statement{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: -1.2px;
+  word-spacing: 1.2px;
+  color: #E94922;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+#statement{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px;
+  letter-spacing: -1.4px;
+  word-spacing: 1px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+/* Pjotr Edit dit alleen */
 .adress-stad-postcode{
     font-size: 16px;
     font-weight: 400;
@@ -20,13 +61,22 @@ body{
     background-color: #8b288f;
     height: 75px;
 }
-ul{
-    list-style-type:none;
+.nav-right{
+  width: 120px;
+  float: right;
+  height: 100%;
+  background-color: gray;
+}
+.nav-right ul{
+  list-style-type: none;
+}
+.nav ul{
+    list-style-type: none;
     margin:0px;
     padding:0px;
     float: right;
 }
-li{
+.nav li{
     display: inline;
     line-height: 75px;
     color: white;
@@ -42,9 +92,6 @@ li{
 .breadcrums a {
     color: #666;
     text-decoration: none;
-}
-#pad {
-    padding-right: 25px;
 }
 .header-object .row {
     margin-top: 15px;
