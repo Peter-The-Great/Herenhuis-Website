@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body{
+    color: #333;
+}
+.header-object{
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+}
+.adress-stad-postcode{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+.header-Pricing-House{
+    font-size: 20px;
+    line-height: 28px;
+}
+.nav {
+    background-color: #f7a100;
+    height: 75px;
+}
+ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    float: right;
+}
+li{
+    display: inline;
+    line-height: 75px;
+    color: white;
+}
+.breadcrums {
+    background-color: #e6f2f7;
+    height: 50px;
+}
+.breadcrums p {
+    line-height: 50px;
+    color: #999;
+}
+.breadcrums a {
+    color: #666;
+    text-decoration: none;
+}
+#pad {
+    padding-right: 25px;
+}
