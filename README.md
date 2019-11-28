@@ -16,6 +16,7 @@ Een project van 4 lesweken (Regio Rotterdam)
 
 # Eisen
 
+* VERGEET NIET OM TE VRAGEN AAN EESTERMANS OVER DE OFFERTE.
 * Algemene samenvatting van het huis, huidige bod, start of nieuwe tijdslimiet.
 * Een virtuele toer met verschillende foto's van het huis en knopjes die naar rechts, links, boven en beneden gaan.
 * Omschrijving van het huis.
