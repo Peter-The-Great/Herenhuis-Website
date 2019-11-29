@@ -27,7 +27,7 @@ Een project van 4 lesweken (Regio Rotterdam)
 * Bij aanbieders moeten we hun naam, bod, email, telefoonnummer, en iban-nummer nodig hebben zodat we die in de php server kunnen         gebruiken
 * Contact gegevens van de verkoper zelf. (vindt Pjotr)
 * Een demo over 4 weken.
-# Huistijl Website (Moet nog verder om gevraagd worden)
+# Huistijl Website (Moet nog verder om gevraagd worden) Edit: (Ik denk dat we dit keer het zelf mogen kiezen)
 * (bepaalde kleuren moeten nog gevraagd worden)
 * Tekstkleur:
 * Actiekleur:
