@@ -10,7 +10,7 @@ body{
 #pad{
     padding-right: 25px;
 }
-#pad, a:visited, a:hover{
+#pad, a, a:visited, a:hover{
   color: #fff;
   text-decoration: none;
 }
@@ -23,18 +23,7 @@ body{
   display: block;
   align-items: left;
 }
-/*#Statement{
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 20px;
-  letter-spacing: -1.2px;
-  word-spacing: 1.2px;
-  color: #E94922;
-  font-weight: 700;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-}*/
+
 #statement{
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 18px;
@@ -50,7 +39,18 @@ body{
 /* Pjotr Edit dit alleen hierboven.
 Dit was een kleine teskt voor de stuff hier boven.
 */
-
+/*#Statement{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: -1.2px;
+  word-spacing: 1.2px;
+  color: #E94922;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}*/
 .adress-stad-postcode{
     font-size: 16px;
     font-weight: 400;
@@ -62,7 +62,7 @@ Dit was een kleine teskt voor de stuff hier boven.
 }
 .nav {
     background-color: #8b288f;
-    height: 95px;
+    height: 85px;
 }
 .nav-right{
   width: 120px;
@@ -97,14 +97,14 @@ Dit was een kleine teskt voor de stuff hier boven.
     text-decoration: none;
 }
 .header-object .row {
-   margin-top: 15px;
+   margin-bottom: 15px;
 }
 
 /* Dit gehele stuk is voor de share optie. */
 .share-menu-object{
   position: absolute;
   left: 90%;
-  top: 125px;
+  top: 135px;
   display: inline-block;
   z-index: 1;
 }
@@ -161,6 +161,6 @@ Dit was een kleine teskt voor de stuff hier boven.
 }
 .Footer-Object{
   width: 100%;
-  height: 75px;
+  min-height: 75px;
   background-color: pink;
 }
