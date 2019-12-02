@@ -7,10 +7,10 @@ body{
     text-align: left;
     display: block;
 }
-#pad{
+.pad{
     padding-right: 25px;
 }
-#pad, a, a:visited, a:hover{
+.pad a, a:hover, a:visited{
   color: #fff;
   text-decoration: none;
 }
@@ -23,7 +23,7 @@ body{
   display: block;
   align-items: left;
 }
-/* #Statement is hier niet meer nodig want het logo staat er al. */
+
 #statement{
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 18px;
@@ -39,7 +39,18 @@ body{
 /* Pjotr Edit dit alleen hierboven.
 Dit was een kleine teskt voor de stuff hier boven.
 */
-
+/*#Statement{ //for nu hoeven we niks toe te voegen.
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: -1.2px;
+  word-spacing: 1.2px;
+  color: #E94922;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}*/
 .adress-stad-postcode{
     font-size: 16px;
     font-weight: 400;
@@ -148,8 +159,32 @@ Dit was een kleine teskt voor de stuff hier boven.
 .col-md-4 {
   margin-right: -10px;
 }
+#google-maps{
+  border: 0;
+  width: 100%;
+  height: 350px;
+}
 .Footer-Object{
   width: 100%;
-  min-height: 75px;
+  min-height: 10px;
+  max-height: 150px;
   background-color: pink;
+}
+.Footer-Nav{
+  list-style-type: none;
+}
+.footer-nav{
+    text-decoration: none;
+    padding: 10px; 
+    color: #007bff;
+    display: inline;
+    position: relative;
+    left: 60px;
+    top: -43px
+}
+.footer-nav a:visited{
+  color: #007bff;
+}
+.footer-nav a:hover{
+  color: white;
 }
