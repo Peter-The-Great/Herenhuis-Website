@@ -7,10 +7,10 @@ body{
     text-align: left;
     display: block;
 }
-.pad{
+#pad{
     padding-right: 25px;
 }
-.pad a, a:hover, a:visited{
+#pad, a, a:visited, a:hover{
   color: #fff;
   text-decoration: none;
 }
@@ -36,6 +36,9 @@ body{
   font-variant: normal;
   text-transform: none;
 }
+/* Pjotr Edit dit alleen hierboven.
+Dit was een kleine teskt voor de stuff hier boven.
+*/
 /* Pjotr Edit dit alleen hierboven.
 Dit was een kleine teskt voor de stuff hier boven.
 */
@@ -84,6 +87,7 @@ Dit was een kleine teskt voor de stuff hier boven.
     line-height: 75px;
     color: white;
 }
+
 .breadcrums {
     background-color: #e6f2f7;
     height: 50px;
@@ -145,6 +149,10 @@ Dit was een kleine teskt voor de stuff hier boven.
   transform: rotate(180deg);
 }*/
 /* Dit was het gedeelte waar de share optie voor was. Edit: we moeten misschien een soort draaiend logotje hebben. */
+.object-media-teasers-foto-plattegrond-video a{
+  color: blue;
+  padding: 15px;
+}
 .house-description{
   display: block;
   box-sizing: inherit;
@@ -166,25 +174,17 @@ Dit was een kleine teskt voor de stuff hier boven.
 }
 .Footer-Object{
   width: 100%;
-  min-height: 10px;
-  max-height: 150px;
+  height: 140px;
   background-color: pink;
 }
-.Footer-Nav{
+.footer-nav ul{
   list-style-type: none;
 }
-.footer-nav{
-    text-decoration: none;
-    padding: 10px; 
-    color: #007bff;
-    display: inline;
-    position: relative;
-    left: 60px;
-    top: -43px
-}
-.footer-nav a:visited{
-  color: #007bff;
-}
-.footer-nav a:hover{
-  color: white;
+.footer-nav li{
+  position: relative;
+  left: 130px;
+  top: -60px;
+  list-style-type: none;
+  display: inline;
+  margin-left: 10px;
 }
