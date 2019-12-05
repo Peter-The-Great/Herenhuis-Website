@@ -1,6 +1,12 @@
 @charset "UTF-8";
 body{
     color: #333;
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out{
+  opacity: 0;
+  transition: none;
 }
 .header-object{
     margin-top: 10px;
@@ -68,9 +74,9 @@ Dit was een kleine teskt voor de stuff hier boven.
     height: 85px;
 }
 .nav-right{
-  width: 120px;
+  width: 170px;
   float: right;
-  height: 450px;
+  height: 850px;
   background-color: gray;
 }
 .nav-right ul{
@@ -84,7 +90,7 @@ Dit was een kleine teskt voor de stuff hier boven.
 }
 .nav li{
     display: inline;
-    line-height: 75px;
+    line-height: 85px;
     color: white;
 }
 
@@ -152,17 +158,25 @@ Dit was een kleine teskt voor de stuff hier boven.
 .object-media-teasers-foto-plattegrond-video a{
   color: blue;
   padding: 15px;
+  border-top: 1px solid blue; 
+  border-bottom: 1px solid blue;
+  border-left: 1px solid blue;
+  border-right: 1px solid blue; 
+}
+#kaartje{
+  margin-left: 5px;
 }
 .house-description{
   display: block;
   box-sizing: inherit;
   margin-left: 100px;
+  margin-bottom: 100px;
 }
 .house-description-title{
   margin-top: 50px;
 }
 .object-description-body{
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .col-md-4 {
   margin-right: -10px;
@@ -175,8 +189,9 @@ Dit was een kleine teskt voor de stuff hier boven.
 .Footer-Object{
   width: 100%;
   height: 140px;
-  background-color: pink;
+  background-color: #8b288f;
 }
+/* Helaas heb ik een bug gevonden waar dan de achter grond heel lelijk uit komt. */
 .footer-nav ul{
   list-style-type: none;
 }
