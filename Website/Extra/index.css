@@ -2,6 +2,13 @@
 html{
 }
 body{
+    color: #333;
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out{
+  opacity: 0;
+  transition: none;
 }
 
 .Text{
