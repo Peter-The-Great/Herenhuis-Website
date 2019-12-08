@@ -74,10 +74,24 @@ Dit was een kleine teskt voor de stuff hier boven.
     height: 85px;
 }
 .nav-right{
-  width: 170px;
+  width: 300px;
   float: right;
   height: 850px;
   background-color: gray;
+}
+input[type=submit]{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  display: inline-block;
+  font-size: 16px;
+  padding: 16px 32px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: #4CAF50;
+  color: white;
 }
 .nav-right ul{
   list-style-type: none;
@@ -143,7 +157,8 @@ Dit was een kleine teskt voor de stuff hier boven.
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #ff0000}
+.share-dropdown-content a:hover
+{background-color: #ff0000}
 
 .share-menu-object:hover .share-dropdown-content {
   display: block;
@@ -158,10 +173,7 @@ Dit was een kleine teskt voor de stuff hier boven.
 .object-media-teasers-foto-plattegrond-video a{
   color: blue;
   padding: 15px;
-  border-top: 1px solid blue; 
-  border-bottom: 1px solid blue;
-  border-left: 1px solid blue;
-  border-right: 1px solid blue; 
+  border: 1px solid blue;
 }
 #kaartje{
   margin-left: 5px;
@@ -169,14 +181,25 @@ Dit was een kleine teskt voor de stuff hier boven.
 .house-description{
   display: block;
   box-sizing: inherit;
+  border: 5px groove #336ba3 ;
+  border-radius: 10px;
   margin-left: 100px;
   margin-bottom: 100px;
+  margin-top: 50px;
+  overflow: auto;
+  max-height: 325px;
 }
 .house-description-title{
   margin-top: 50px;
 }
 .object-description-body{
   margin-bottom: 30px;
+}
+.contact-gegevens, .contact-gegevens-body{
+  margin-left: 50px;
+}
+.contact-gegevens-body{
+  margin-bottom: 50px;
 }
 .col-md-4 {
   margin-right: -10px;
