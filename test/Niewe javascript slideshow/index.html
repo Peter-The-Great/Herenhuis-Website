@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>td { border: 1px solid red; text-align: center;}</style>
+</head>
+<body>
+<table>
+    <tr>
+        <td></td>
+        <td><button id="up" onclick="up();">Naar boven</button></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><button id="previous" onclick="prev()">Naar links</button></td>
+        <td>
+            <figure><img id="afbeelding" src="Huis foto's/01.jpg" alt=""></figure></td>
+        <td><button id="next" onclick="next();">Naar rechts</button></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button id="down" onclick="down()">Naar beneden</button></td>
+        <td></td>
+    </tr>
+</table>
+
+<script>
+let foto = 0;
+let vloerNr = 1;
+const afbeelding = document.getElementById('afbeelding');
+
+const vloer = new Array();
+vloer[1] = ['01', '02', '03', '04', '05', '06', '07', '08', '09']; // de verschillende image namen
+vloer[2] = ['10', '11', '12', '13'];
+vloer[3] = ['3_1', '3_2', '3_3'];
+vloer[4] = ['3_3', '3_2', '3_1'];
+const folder = "Huis foto's/"  ;
+const extension = '.jpg';
+
+function next()
+{
+    // console.log ('Afbeelding: ' + folder + [vloer][foto] + extension);
+    foto++;
+    afbeelding.src = folder + vloer[vloerNr][foto] + extension;
+}
+function prev(){
+	foto--;
+	afbeelding.src = folder + vloer[vloerNr][foto] + extension;
+    // console.log ('Afbeelding: ' + folder + [vloer][foto] + extension);
+}
+function up()
+{
+    vloerNr++;
+    afbeelding.src = folder + vloer[vloerNr]+[foto] + extension;
+    // console.log ('Afbeelding: ' + folder + [vloer][foto] + extension);
+}
+function down(){
+	vloerNr--;
+	afbeelding.src = folder + vloer[vloerNr][foto] + extension;
+    // console.log ('Afbeelding: ' + folder + [vloer][foto] + extension);
+}
+</script>
+</body>
+</html>
