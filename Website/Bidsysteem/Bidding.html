@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/24c24daece.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Huis.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <title>Bidden</title>
+</head>
+
+<body>
+    <nav>
+        <!-- Dit is een navbar bestaat uit. -->
+        <div class="nav">
+            <div class="container">
+                <ul>
+                    <li id="pad"><a href="..\Website.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li id="pad"><a href="https://www.funda.nl/mijn/login/"><i class="far fa-user-circle"></i> Account</a></li>
+                </ul>
+                <div id="Statement"><a href="..\Website.html"><img alt="Peterson-logo" style="max-height: 60px;" class="img-fluid" src="..\Huis foto's\logo.png"></a><br>
+                <span id="statement">Wij verkopen Herenhuizen</span></div>
+            </div>
+        </div>
+    </nav>
+    <header class="header-object">
+        <div class="container">
+            <div class="header-object_details">
+                <h1 class="header-object__adres" id="adress">Lange Voorhout 67</h1><span
+                    class="adress-stad-postcode">2354
+                    DK Den Haag</span>
+                <div class="header-Pricing-House">Bieden: Wat is uw bid?</div>
+            </div>
+            </div>
+          </header>
+          <center><div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="">
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Factuur Adres</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Volledige naam</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email-Adress</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Adres</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> Stad</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="zip">Post-code</label>
+                          <input type="text" id="zip" name="zip" placeholder="DK 2549">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-50">
+                      <h3>Betaal methode</h3>
+                      <label for="fname">Geacepteerde kaarten</label>
+                      <div class="icon-container">
+                        <i class="fab fa-cc-visa" style="color: navy;"></i>
+                        <i class="fab fa-cc-amex" style="color: blue;"></i>
+                        <i class="fab fa-cc-mastercard" style="color: red;"></i>
+                      </div>
+                      <label for="cname">Naam van Kaart</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit-card nummer</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Verval Maand</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="Oktober">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Verval Jaar</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2019">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvc">CVC</label>
+                          <input type="text" id="cvc" name="cvc" placeholder="123">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <input type="submit" value="Versturen" class="btn">
+                </form>
+              </div>
+            </div>
+          </div></center>
+          <!-- Hier zit het tussen balk systeem in voor als gebruikers een manier willen hebben om alles overzichtelijk te vinden. -->
+    <br>
+            <div class="contact-gegevens">
+            <h2 class="contact-gegevens-h">Neem Contact met Ons</h2>
+                <div class="contact-gegevens-body">
+                  Henry Petersons.<br>
+
+                  <a class="contact-link" href="tel:+31642899748">Telefoon-Nummer:(31+)6-42-89-97-48.</a><br>
+
+                  <a class="contact-link" href="mailto:84669@glr.nl">Henrypetersons@gmail.com</a><br>
+
+                  Rotterdam koekamp <br>
+
+                  BTW Nummer: NL666999B69. </div>
+              </div>
+            <footer class="Footer-Object">
+                <div id="Statement"><a href="Website.html"><img alt="Peterson-logo" style="max-height: 100px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
+                    <div class="footer-nav"><ul>
+                            <li class="footer-nav"><a href="Extra/Over-Ons.html">Over Ons</a></li>
+                            <li class="footer-nav"><a href="mailto:84669@glr.nl">Contact (Email)</a></li>
+                        </ul>
+                    </div>
+                </footer>
+                <script src="Script.js">
+                </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- Credits to Lars for helping me with a little bit of frontend-->
