@@ -1,8 +1,5 @@
 ## Beroeps 1 Herenhuis
 Een project van 4 lesweken (Regio Rotterdam)
-* //Belangrijk voor Pjotr fade in: http://jsfiddle.net/SO_AMK/VV2ek/
-* +http://fancybox.net/home
-
 
 # Vragen
 
