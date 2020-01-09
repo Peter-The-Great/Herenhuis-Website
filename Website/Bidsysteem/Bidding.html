@@ -8,11 +8,10 @@
     <script src="https://kit.fontawesome.com/24c24daece.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Huis.css">
+    <link rel="stylesheet" type="text/css" href="Bid.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <title>Bidden</title>
 </head>
-
 <body>
     <nav>
         <!-- Dit is een navbar bestaat uit. -->
@@ -20,9 +19,9 @@
             <div class="container">
                 <ul>
                     <li id="pad"><a href="..\Website.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li id="pad"><a href="https://www.funda.nl/mijn/login/"><i class="far fa-user-circle"></i> Account</a></li>
+                    <li id="pad"><a href="Account.html"><i class="far fa-user-circle"></i> Account</a></li>
                 </ul>
-                <div id="Statement"><a href="..\Website.html"><img alt="Peterson-logo" style="max-height: 60px;" class="img-fluid" src="..\Huis foto's\logo.png"></a><br>
+                <div id="Statement"><a href="..\Website.html"><img alt="Peterson-logo" style="max-height: 60px; position: relative; top: 2px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
                 <span id="statement">Wij verkopen Herenhuizen</span></div>
             </div>
         </div>
@@ -49,10 +48,9 @@
                       <label for="email"><i class="fa fa-envelope"></i> Email-Adress</label>
                       <input type="text" id="email" name="email" placeholder="john@example.com">
                       <label for="adr"><i class="fas fa-map-marker-alt"></i> Adres</label>
-                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <input type="text" id="adr" name="address" placeholder="Lange Voorhout 67">
                       <label for="city"><i class="fas fa-city"></i> Stad</label>
-                      <input type="text" id="city" name="city" placeholder="New York">
-          
+                      <input type="text" id="city" name="city" placeholder="Den Haag">
                       <div class="row">
                         <div class="col-50">
                           <label for="zip"><i class="fas fa-mail-bulk"></i> Post-code</label>
@@ -69,6 +67,10 @@
                         <i class="fab fa-cc-amex" style="color: blue;"></i>
                         <i class="fab fa-cc-mastercard" style="color: red;"></i>
                       </div>
+                      <label for="price"><i class="fas fa-euro-sign"></i> Prijs van Bid</label>
+                      <input type="text" id="price" name="price" placeholder="120.000">
+                      <label for="bank"><i class="fas fa-university"></i></i> Bank</label>
+                      <input type="text" id="bank" name="bank" placeholder="ABN AMRO ">
                       <label for="cname"><i class="far fa-credit-card"></i> Naam van Kaart</label>
                       <input type="text" id="cname" name="cardname" placeholder="John More Doe">
                       <label for="ccnum">Credit-card nummer</label>
@@ -110,15 +112,14 @@
                   BTW Nummer: NL666999B69. </div>
               </div>
             <footer class="Footer-Object">
-                <div id="Statement"><a href="Website.html"><img alt="Peterson-logo" style="max-height: 100px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
+                <div id="Statement"><a href="..\Website.html"><img alt="Peterson-logo" style="max-height: 100px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
                     <div class="footer-nav"><ul>
-                            <li class="footer-nav"><a href="Extra/Over-Ons.html">Over Ons</a></li>
-                            <li class="footer-nav"><a href="mailto:84669@glr.nl">Contact (Email)</a></li>
+                            <li class="footer-nav"><a href="..\Extra/Over-Ons.html">Over Ons</a></li>
+                            <li class="footer-nav"><a href="mailto:84669@glr.nl" >Contact (Email)</a></li>
                         </ul>
                     </div>
                 </footer>
-                <script src="Script.js">
-                </script>
+                <script src="Script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
