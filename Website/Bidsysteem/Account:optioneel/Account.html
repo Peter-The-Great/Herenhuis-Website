@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="..\Huis foto's/logo.png">
+    <script src="https://kit.fontawesome.com/24c24daece.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Account.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <title>Account</title>
+</head>
+<body contenteditable="false">
+    <nav>
+        <!-- Dit is een navbar bestaat uit. -->
+        <div class="nav">
+            <div class="container">
+                <ul>
+                    <li id="pad"><a href="..\Website.html"><i class="fas fa-home"></i> Home</a></li>
+                </ul>
+                <div id="Statement"><a href="..\Website.html"><img alt="Peterson-logo" style="max-height: 80px; position: relative; top: 2px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
+                <span id="statement">Wij verkopen Herenhuizen</span></div>
+            </div>
+        </div>
+    </nav>
+          <center><div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="">
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Inloggen</h3>
+                      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                      <!--<div id="id01" class="modal" style="display: none;">
+                        
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                          <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                            <img src="..\Huis foto's\default-avatar.png" alt="Avatar" class="avatar">
+                          </div>
+                      
+                          <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required="">
+                      
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required="">
+                              
+                            <button type="submit">Login</button>
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                          </div>
+                      
+                          <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                          </div>
+                        </form>
+                      </div>-->
+                      <h3>Registreren</h3>
+                      <label for="Email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="Email" name="Email" placeholder="john@example.com">
+                      <label for="Wachtwoord"><i class="fa fa-user"></i> Wachtwoord</label>
+                      <input type="text" id="city" name="Wachtwoord" placeholder="Den Haag">
+                      <label for="Bevestig"><i class="fa fa-user"></i> Bevestig Wachtwoord</label>
+                      <input type="text" id="Bevestig" name="Bevestig" placeholder="Den Haag">
+                      <div class="row">
+                      </div>
+                    </div>
+                  </div>
+                  <input type="submit" value="Versturen" class="btn">
+                </form>
+              </div>
+            </div>
+          </div>
+        </center>
+          <!-- Hier zit het tussen balk systeem in voor als gebruikers een manier willen hebben om alles overzichtelijk te vinden. -->
+    <br>
+            <div class="contact-gegevens">
+            <h2 class="contact-gegevens-h">Neem Contact met Ons</h2>
+                <div class="contact-gegevens-body">
+                  Henry Petersons.<br>
+
+                  <a class="contact-link" href="tel:+31642899748">Telefoon-Nummer:(31+)6-42-89-97-48.</a><br>
+
+                  <a class="contact-link" href="mailto:84669@glr.nl">Henrypetersons@gmail.com</a><br>
+
+                  Rotterdam koekamp <br>
+
+                  BTW Nummer: NL666999B69. </div>
+              </div>
+            <footer class="Footer-Object">
+                <div id="Statement"><a href="Website.html"><img alt="Peterson-logo" style="max-height: 100px; position: relative; top: 15px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
+                    <div class="footer-nav"><ul>
+                            <li class="footer-nav"><a href="../Extra/Over-Ons.html">Over Ons</a></li>
+                            <li class="footer-nav"><a href="mailto:84669@glr.nl">Contact (Email)</a></li>
+                        </ul>
+                    </div>
+                </footer>
+                <script src="Script.js"></script>
+                <script src="Login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- Credits to Lars for helping me with a little bit of frontend-->
