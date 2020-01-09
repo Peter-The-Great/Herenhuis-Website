@@ -108,7 +108,7 @@
 }
 sort($row["bod"]);
   
-      ?><hr><!-- Einde PHP aanbod  -->
+      ?><hr><!-- Einde PHP aanbod -->
                   <a href="Bidsysteem/Bidding.html"><input id="submit-button" type="submit" value="Versturen" name="verzenden" /></a>
               </div>
             </div>
