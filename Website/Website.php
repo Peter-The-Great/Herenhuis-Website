@@ -98,7 +98,7 @@
     echo "<table>";
     while($row = mysqli_fetch_assoc($result)) {
     echo "<tr>";
-        echo "<td>".$row["Voornaam"]."</td>" . "<td style='padding-left: 10px;'>" . $row["bod"]. "</td>" . "<td style='padding-left: 10px;'>" . $row["date"] . "</td>" ;
+        echo "<td style='color: #8b288f;'>".$row["Voornaam"]."</td>" . "<td style='padding-left: 10px; color: #333;'>" . $row["bod"]. "</td>" . "<td style='padding-left: 10px; color: blanchedalmond;'>" . $row["date"] . "</td>";
     echo "</tr>";
     }
       //Close table
