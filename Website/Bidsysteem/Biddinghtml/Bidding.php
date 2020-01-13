@@ -1,0 +1,155 @@
+<?php
+$servername = "localhost";
+$database = "80781_beroeps";
+$username = "80781";
+$password = "Qu1p3*v6";
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+if ($conn -> connect_errno) {
+  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+  exit();
+}
+
+$sql= "SELECT `bod` FROM `BID` ORDER BY `bod` DESC LIMIT 1";
+	$result = mysqli_query($conn, $sql);
+	$antwoord = mysqli_fetch_array($result);
+	
+	/*if (!$conn -> query($sql)) {
+	  echo("Error description: " . $conn -> error);
+	}
+	else {echo $sql;}*/
+	
+	$minbid = ($antwoord['bod'] + 10000);
+	//echo "<p>$minbid</p>";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="..\Huis foto's/logo.png">
+    <script src="https://kit.fontawesome.com/24c24daece.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Bid.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <title>Bidden</title>
+</head>
+<body>
+    <nav>
+        <!-- Dit is een navbar bestaat uit. -->
+        <div class="nav">
+            <div class="container">
+                <ul>
+                    <li id="pad"><a href="..\Website.html"><i class="fas fa-home"></i> Home</a></li>
+                    
+                </ul>
+                <div id="Statement"><a href="..\Website.html"><img alt="Peterson-logo" style="max-height: 60px; position: relative; top: 2px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
+                <span id="statement">Wij verkopen Herenhuizen</span></div>
+            </div>
+        </div>
+    </nav>
+    <header class="header-object">
+        <div class="container">
+            <div class="header-object_details">
+                <h1 class="header-object__adres" id="adress">Lange Voorhout 67</h1><span
+                    class="adress-stad-postcode">2354
+                    DK Den Haag</span>
+                <div class="header-Pricing-House">Bieden: Wat is uw bod?</div>
+            </div>
+            </div>
+          </header>
+          <center><div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="insert.php" method="POST">
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Factuur Adres</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Voornaam</label>
+                      <input type="text" id="fname" name="voornaam" value="<?php echo $voornaam;?>" placeholder="John">
+					  <label for="fname"><i class="fa fa-user"></i> Achternaam</label>
+                      <input type="text" id="fname" name="achternaam" value="<?php echo $achternaam;?>" placeholder="M. Doe">	
+                      <label for="email"><i class="fa fa-envelope"></i> Email-Adress</label>
+                      <input type="text" id="email" name="email" value="<?php echo $email;?>" placeholder="john@example.com">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-50 container">
+                      <h3>Betaal methode</h3>
+                      <label for="fname">Geacepteerde kaarten</label>
+                      <div class="icon-container">
+                        <i class="fab fa-cc-visa" style="color: navy;"></i>
+                        <i class="fab fa-cc-amex" style="color: blue;"></i>
+                        <i class="fab fa-cc-mastercard" style="color: red;"></i>
+                      </div>
+                      <label for="price"><i class="fas fa-euro-sign"></i> Prijs van Bod</label>
+                      <input type="text" id="price" name="bid" value="<?php echo $bid?>" min="<?php echo $minbid?>" placeholder="<?php echo "minimaal € ".$minbid?>">
+                      <label for="bank"><i class="fas fa-university"></i></i> Bank</label>
+                      <input type="text" id="bank" name="bank" value="<?php echo $bank;?>" placeholder="ABN AMRO ">
+                      <label for="cname"><i class="far fa-credit-card"></i> Naam van Kaart</label>
+                      <input type="text" id="cname" name="kaartnaam" value="<?php echo $kaartnaam;?>" placeholder="John More Doe">
+                      <label for="ccnum">Credit-card nummer</label>
+                      <input type="text" id="ccnum" name="kaartnummer" value="<?php echo $kaartnummer;?>" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth"><i class="fas fa-calendar-week"></i> Verval Maand</label>
+                      <input type="text" id="expmonth" name="expmaand" value="<?php echo $expmaand;?>" placeholder="Oktober">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear"><i class="fas fa-calendar-week"></i> Verval Jaar</label>
+                          <input type="text" id="expyear" name="expjaar" value="<?php echo $expjaar;?>" placeholder="2019">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvc">CVC</label>
+                          <input type="text" id="cvc" name="cvc"value="<?php echo $CVC;?>" placeholder="123">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="container">
+                  <input type="submit" value="Versturen" class="btn grow">
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </center>
+          <!-- Hier zit het tussen balk systeem in voor als gebruikers een manier willen hebben om alles overzichtelijk te vinden. -->
+    <br>
+            <div class="contact-gegevens">
+            <h2 class="contact-gegevens-h">Neem Contact met Ons</h2>
+                <div class="contact-gegevens-body">
+                  Henry Petersons.<br>
+
+                  <a class="contact-link" href="tel:+31642899748">Telefoon-Nummer:(31+)6-42-89-97-48.</a><br>
+
+                  <a class="contact-link" href="mailto:84669@glr.nl">Henrypetersons@gmail.com</a><br>
+
+                  Rotterdam koekamp <br>
+
+                  BTW Nummer: NL666999B69. </div>
+              </div>
+            <footer class="Footer-Object">
+                <div id="Statement"><a href="..\Website.html"><img alt="Peterson-logo" style="max-height: 100px;" class="img-fluid" src="..\Huis foto's\logo.png"></a>
+                    <div class="footer-nav"><ul>
+                            <li class="footer-nav"><a href="..\Extra/Over-Ons.html">Over Ons</a></li>
+                            <li class="footer-nav"><a href="mailto:84669@glr.nl" >Contact (Email)</a></li>
+                        </ul>
+                    </div>
+                </footer>
+                <script src="Script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- Credits to Lars for helping me with a little bit of frontend-->
