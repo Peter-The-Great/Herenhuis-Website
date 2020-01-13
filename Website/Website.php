@@ -37,7 +37,7 @@
                 <h1 class="header-object__adres" id="adress">Lange Voorhout 67</h1><span
                     class="adress-stad-postcode">2354
                     DK Den Haag</span>
-                <div class="header-Pricing-House">Bieden: Zie Omschrijving</div>
+                <div  class="header-Pricing-House">Bieden: Zie Omschrijving</div>
             </div>
             <div class="share-menu-object">
                 <button class="share-menu__dropdown-share-button">Delen <i class="fas fa-angle-down"></i>
@@ -98,7 +98,7 @@
     echo "<table>";
     while($row = mysqli_fetch_assoc($result)) {
     echo "<tr>";
-        echo "<td>".$row["Voornaam"]."</td>" . "<td>" . $row["bod"]. "</td>" . "<td>" . $row["date"] . "</td>" ;
+        echo "<td>".$row["Voornaam"]."</td>" . "<td style='padding-left: 10px;'>" . $row["bod"]. "</td>" . "<td style='padding-left: 10px;'>" . $row["date"] . "</td>" ;
     echo "</tr>";
     }
       //Close table
