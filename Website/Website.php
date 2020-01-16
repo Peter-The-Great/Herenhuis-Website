@@ -442,4 +442,4 @@ sort($row["bod"]);
         crossorigin="anonymous"></script>
 </body>
 </html>
-<!-- Credits to Lars for kinda helping me with a little bit of frontend-->
+<!-- Credits to Lars for kinda helping me with a very little bit of frontend-->
