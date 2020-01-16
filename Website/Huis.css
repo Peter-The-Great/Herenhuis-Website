@@ -202,6 +202,11 @@ img.img-fluid.rounded:hover{
 #kaartje{
   margin-left: 5px;
 }
+/* Hier begint styles voor PHP */
+td{
+  padding-right: 10px;
+}
+/* Hier eindigt styles for PHP */
 .house-description{
   display: block;
   border: 5px groove #336ba3 ;
